@@ -1,0 +1,65 @@
+zh_cn:
+  attributes: &attributes
+    product:
+      name: "产品名称"
+      name_eng: "英文名称"
+      barcode: "UPC条码"
+      level: "产品等级"
+      sale_mode: "分销类型"
+      prod_status: "状态"
+      item_status: "产品类型"
+      created_at: "创建时间"
+      updated_at: "修改时间"
+      brand_id: "品牌"
+      materials: "材质"
+      categories: "品类"
+      features: "功效"
+      lines: "系列"
+      audiences: "试用人群"
+      material_id: "物料编号"
+      name_alias: "产品简称"
+      color: "颜色"
+      size: "尺码"
+      id: "编号"
+
+  errors: &errors
+    messages:
+      inclusion: "未在列表中"
+      exclusion: "被保留"
+      invalid: "无效"
+      confirmation: "没有匹配配置信息"
+      accepted: "必须接受"
+      empty: "不能为空"
+      blank: "必须填写"
+      too_long: "过长（最大值为 %{count} 个字符，一个中文占用两个字符）"
+      too_short: "太短了（最小值为 %{count} 个字符，一个中文占用两个字符）"
+      wrong_length: "长度错误（应为 %{count} 个字符，一个中文占用两个字符）"
+      taken: "已被占用"
+      not_a_number: "不是数字"
+      greater_than: "必须大于 %{count} 个字符，一个中文占用两个字符"
+      greater_than_or_equal_to: "必须大于等于 %{count} 个字符，一个中文占用两个字符"
+      equal_to: "必须等于 %{count} 个字符，一个中文占用两个字符"
+      less_than: "必须小于 %{count} 个字符，一个中文占用两个字符"
+      less_than_or_equal_to: "必须小于等于 %{count} 个字符，一个中文占用两个字符"
+      odd: "必须为奇数"
+      even: "必须为偶数"
+      record_invalid: "验证失败： %{errors}"
+      content_type: "文件格式不支持"
+
+  activemodel:
+    errors:
+      <<: *errors
+    attributes:
+      <<: *attributes
+
+  mongoid:
+    attributes:
+      <<: *attributes
+
+  views:
+    pagination:
+      first: "首页"
+      last: "尾页"
+      previous: "上页"
+      next: "下页"
+      truncate: "..."
